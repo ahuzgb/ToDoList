@@ -10,7 +10,7 @@ function Todo({ todo, index, markTodo, removeTodo }) {
       className="todo"
       
     >
-      <span style={{ textDecoration: todo.isDone ? "line-through" : "" }}>{todo.text}</span>
+      <span style={{ textDecoration: todo.isDone ? "line-through " : "" }}>{todo.text}</span>
       <div>
         <Button variant="outline-success" onClick={() => markTodo(index)}>✓</Button>{' '}
         <Button variant="outline-danger" onClick={() => removeTodo(index)}>✕</Button>
@@ -35,8 +35,8 @@ function FormTodo({ addTodo }) {
       <Form.Label><b>Add something you need to do</b></Form.Label>
       <Form.Control type="text" className="input" value={value} onChange={e => setValue(e.target.value)} placeholder="Add new todo" />
     </Form.Group>
-    <Button variant="primary mb-3" type="submit">
-      Submit
+    <Button variant="primary mb-3" type="submit" className="submit">
+      Add
     </Button>
   </Form>
   );
