@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { Button, Card, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Navbar from './Components/Navbar'
 
 function Todo({ todo, index, markTodo, removeTodo }) {
   return (
@@ -69,9 +69,16 @@ function App() {
 
 
   return (
+    <div className="background" style={{ 
+      backgroundImage: `url("https://www.toogit.com/uploads/ServicesAttachments/2021/01210431007780.png")` 
+    }}>
     <div className="app">
+      <Navbar
+      
+      />
+     
       <div className="container">
-        <h1 className="text-center mb-4">Make your life easier</h1>
+        <h1 className="text-center mb-4"></h1>
         <FormTodo addTodo={addTodo} />
         <div>
           {todos.map((todo, index) => (
@@ -87,9 +94,15 @@ function App() {
               </Card.Body>
             </Card>
           ))}
+          
         </div>
+    
       </div>
+      
+      
     </div>
+    </div>
+    
   );
 }
 

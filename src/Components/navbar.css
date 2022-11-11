@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+h1 {
+    font-family: 'Alfa Slab One', cursive;
+    color: lightcoral
+  }
+
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.navbarBackground{
+    background-size: cover;
+}

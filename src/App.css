@@ -3,7 +3,6 @@
 .app {
   padding: 30px;
   padding-bottom: 733px;
-  background-color: lightblue;
   
 }
 
@@ -17,4 +16,13 @@
 .submit{
   margin-top: 10px;
   margin-left: 600px;
+}
+.background{
+  
+  
+  
+  background-size: cover;
+}
+b{
+  color: lightcoral;
 }
